@@ -1,0 +1,206 @@
+body{
+    font-family: monospace;
+    background-image:conic-gradient(rgb(85, 170, 85), aqua);
+    font-size: 17px;
+}
+
+.amarci{
+    background-color: blue;
+    border-color: blue;
+    color: aqua;
+}
+.amarci2{
+    border: none;
+    background-image: url(/kepek/tenger2.jpg);
+    margin: 5px;
+    padding: 5px;
+    color: blue;
+}
+.marcie2{
+    background-image: url(kepek/tenger2.jpg);
+    border-color: blue;
+}
+.marcidiv1{
+    background-image: url(/kepek/bstone1.jpg);
+    border-color: blue;
+}
+.marcie{
+    background-image: url(/kepek/whitebeard.jpg);
+}
+
+.andras{
+    background-color: rgb(0, 68, 0);
+    color: white;
+    border-color: rgb(17, 102, 17);
+}
+
+p{
+    font-size: 15px;
+}
+main{
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    border: solid 10px ;
+    max-width: 1500px;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-areas: 
+    "h h"
+    "n n"
+    "a as"
+    "t as"
+    "f f"
+    ;
+}
+
+header{
+    text-align: center;
+    grid-area: h;
+}
+
+a{
+    border: 10px solid rgb(17, 102, 17);
+    border-radius: 10px;
+    font-size: 20px;
+    color: chartreuse;
+    text-decoration: none;
+    background-color: rgb(0, 68, 0);
+}
+
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.menu{
+    text-align: center;
+    list-style-type: none;
+    display: inline;
+}
+
+section{
+    grid-area: n;
+}
+
+aside{
+    padding-left: 50px;
+    grid-area: as;
+}
+
+article{
+    margin-top: 20px;
+    padding-left: 50px;
+    grid-area: a;
+
+
+
+
+
+
+}
+#div1 {
+    padding: 15px;
+    width: auto;
+    height: auto;
+    background-color: rgb(45, 136, 45);
+    border: solid 10px;
+
+    border-radius: 10px;
+    position: relative;
+    animation: div1 2s alternate;
+}
+#div1 {animation-timing-function: ease;}
+@keyframes div1 {
+    from {left: -1200px;}
+    to {left: 0px;}
+}
+
+#div2 {
+    position: relative;
+    animation: div2 2s alternate;
+}
+  
+#div2 {animation-timing-function: ease;}
+@keyframes div2 {
+    from {right: -1000px;}
+    to {right: 0px;}
+}
+
+img{
+    margin-top: 20px;
+    border: solid 10px;
+    border-radius: 10px;
+}
+
+table{
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border-collapse: collapse;
+    text-align: center;
+    grid-area: t;
+}
+td, th{
+    border: solid 5px;
+    border-color: rgb(17, 102, 17);
+}
+th{
+    border-top: solid 10px;
+    border-left: solid 10px;
+    border-right: solid 10px;
+    border-color: rgb(17, 102, 17);
+}
+tbody{
+    border-right: solid 10px;
+    border-left: solid 10px;
+    border-bottom: solid 10px;
+    border-color: rgb(17, 102, 17);
+}
+
+
+footer{
+    grid-area: f;
+}
+.Nevek{
+    text-align: center;
+    padding: 10px;
+    margin: -15px;
+    border-top: solid 10px blue
+}
+.Nevek2{
+    background-color: rgb(0, 68, 0);
+    text-align: center;
+    margin: -15px;
+    border-top: solid 10px rgb(17, 102, 17);
+}
+
+
+@media only screen and (max-width:500px){
+    main{
+        border: none;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "h"
+        "n"
+        "a"
+        "as"
+        "t"
+        "f"
+        ;
+    }
+    .andras{
+        background-color: rgb(24, 24, 24);
+    }
+
+    .menu{
+        text-align: center;
+        list-style-type: none;
+        display: grid;
+        padding-right: 20px;
+    }
+    article{
+        padding: 10px;
+    }
+}

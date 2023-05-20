@@ -1,0 +1,103 @@
+main{
+    background-color: black;
+}
+ul{
+    list-style-type: none;
+}
+.menu{
+    display: grid;
+  grid-template-columns: auto auto auto;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "h h"
+    "n n"
+    "a as"
+    "f f"
+    ;
+
+}
+header{
+    grid-area: h;
+}
+article{
+    grid-area: a;
+}
+nav{
+    
+    grid-area: n;
+}
+footer{
+    grid-area: f;
+}
+aside{
+    grid-area: as;
+}
+.kep1{
+    width: 400px;
+    height: auto;
+}
+body{
+    
+    color:white;
+    background-image: url("hatter.jpg"); 
+    background-color: black;
+    margin: 10px;
+
+}
+.kep2{
+    float: left;
+}
+.kep{
+    width: 400px;
+    height: auto;
+}
+.jel {
+    list-style-image:url("feketeharomszog.png");
+  }
+.erdekessegek{
+    border: 3px solid purple;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    
+  }
+  
+  table {
+    margin: auto;
+    width: 50%;
+    border-collapse: collapse;
+    text-align: center;
+    color: white;
+}
+td, th {
+    border: 1px solid white;
+}
+tbody tr:nth-child(odd){
+    background-color: blue;
+}
+.vezess{
+    border: 3px solid white;
+}
+#tablazat{
+    padding-bottom: 50px;
+}
+
+#div {
+    position: relative;
+    animation: div 2s alternate;
+}
+  
+#div {animation-timing-function: ease;}
+@keyframes div {
+    from {right: 1000px;}
+    to {right: 0px;}
+}
+

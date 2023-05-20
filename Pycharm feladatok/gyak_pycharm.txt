@@ -1,0 +1,8 @@
+#def matek():
+
+    #a=int(input("Kérlek adj meg egy egész számot:"))
+    #b=int(input("Kérlek adj még egy egész számot:"))
+    #c=a/b
+    #if a and b!=0:
+        #x=a*c/b
+    #print(x)
